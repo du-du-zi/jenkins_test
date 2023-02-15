@@ -15,7 +15,7 @@ pipeline {
                 echo 'Clonning Repository'
 
                 git url: 'https://github.com/du-du-zi/jenkins_test.git',
-                    branch: 'master',
+                    branch: 'main',
                     credentialsId: 'gittest'
             }
 
@@ -40,7 +40,7 @@ pipeline {
           agent any
 
           steps {
-            echo 'Test Done"
+            echo 'Test Done'
           }
         }
     }
